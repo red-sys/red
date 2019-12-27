@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.haha.baidumap.MainActivity">
+
+    <FrameLayout
+        android:paddingTop="24dp"
+        android:background="@color/colorTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/et_search"
+            android:background="@drawable/edit_bg"
+            android:layout_width="250dp"
+            android:layout_gravity="center"
+            android:hint="搜地区、查景点"
+            android:gravity="center"
+            android:layout_height="35dp" />
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"></View>
+
+        <ImageView
+            android:id="@+id/iv_refresh"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginLeft="15dp"
+            android:background="@mipmap/icon_refresh" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true" />
+
+        <ImageView
+            android:id="@+id/iv_switch"
+            android:background="@mipmap/icon_switch"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="right"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+    </FrameLayout>
+
+</LinearLayout>
